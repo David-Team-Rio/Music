@@ -28,7 +28,7 @@ async def start(_, message: Message):
                     ),
                 ],[ 
                     InlineKeyboardButton(
-                        "➕  اضفني الى مجموعتك ➕", url="https://t.me/MusicRioBot?StartGroup=New
+                        "➕  اضفني الى مجموعتك ➕", url="https://t.me/MusicRioBot?StartGroup=New"
                     )]
             ]
         ),
