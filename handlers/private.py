@@ -28,7 +28,7 @@ async def start(_, message: Message):
                     ),
                 ],[ 
                     InlineKeyboardButton(
-                        "➕  اضفني الى مجموعتك ➕", url="https://t.me/MusicRioBot?StartGroup=New"
+                        "اضفني الى مجموعتك", url="https://t.me/MusicRioBot?StartGroup=New"
                     )]
             ]
         ),
@@ -49,13 +49,13 @@ async def gstart(_, message: Message):
    )
 
 
-@Client.on_message(filters.command("panel") & ~filters.private & ~filters.channel)
+@Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
       await message.reply_text("""** البوت يختص بتحميل والبحث عن الاغاني 
 
 ارسل يوزر البوت مع اسم الاغنيه للبحث
 مثال : 
-معرف البوت + Rio
+معرف البوت + الكلمه
 
 تستطيع تحميل الاغاني ايضا
 بالاوامر التاليه :
